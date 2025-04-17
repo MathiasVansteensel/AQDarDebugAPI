@@ -24,8 +24,10 @@ internal class Program
         });
 
         app.MapGet("/", () => Results.Content(File.ReadAllText("wwwroot/root.html"), "text/html"));
+        app.MapGet("/kys", async () => await app.StopAsync());
 
         await app.RunAsync();
+        Console.WriteLine("AHHHHHHHHHHHHHHHHHHHH");
     }
 
 }
