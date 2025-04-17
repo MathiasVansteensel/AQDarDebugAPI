@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "AQDarDebugAPI": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
