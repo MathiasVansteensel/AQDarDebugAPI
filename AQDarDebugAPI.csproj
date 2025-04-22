@@ -19,6 +19,16 @@
     <None Update="Static\img\pain.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Update="Static\sound\DootDoot.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Static\sound\Voicy_Victory SFX_notCompressed.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Static\sound\" />
   </ItemGroup>
 
 </Project>

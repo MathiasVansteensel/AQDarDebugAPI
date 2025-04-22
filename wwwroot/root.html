@@ -2,9 +2,24 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH</title>
+    <title>Do not click if you value your ears</title>
+    <script defer>
+        window.addEventListener("DOMContentLoaded", () => {
+            const audio = new Audio("Static/sound/DootDoot.wav");
+            const audio2 = new Audio("Static/sound/Voicy_Victory SFX_notCompressed.mp3");
+
+            const playOnce = () => {
+                console.log("Playing audio...");
+                audio.play().catch(console.error);
+                audio2.play().catch(console.error);
+                window.removeEventListener("click", playOnce);
+            };
+
+            window.addEventListener("click", playOnce);
+        });
+    </script>
 </head>
 <body>
-    <img src="Static/img/pain.jpg"/>
+    <img src="Static/img/pain.jpg" />
 </body>
 </html>
